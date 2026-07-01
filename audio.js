@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!row) return;
       var arCell = row.querySelector('.vocab-ar');
       if (!arCell) return;
-      var text = arCell.textContent.trim();
+      var text = arCell.textContent.trim() + "\u200B";
       
       if (isInsideAppInventor()) {
         window.AppInventor.setWebViewString(text);
