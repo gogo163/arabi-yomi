@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function speakViaAppInventor(text) {
     // بيبعت النص لـ App Inventor، وبعدين الـ Blocks بتاعة التطبيق
     // (WebViewer1.WebViewStringChanged → TextToSpeech1.Speak) بتقرأه
-    window.AppInventor.setWebViewString(text + " ");
+   window.AppInventor.setWebViewString(text);
   function speakViaBrowser(text) {
     if (!('speechSynthesis' in window)) {
       alert('عفوًا، متصفحك لا يدعم النطق الصوتي. جرّب Chrome أو Edge.');
